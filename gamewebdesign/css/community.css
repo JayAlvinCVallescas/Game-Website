@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.com-container-top{
+    width: 100%;
+    height: 30em;
+    background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7));
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.com-container-top img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.com-container-top h1{
+    font-size: 7vmin;
+}
+
+.com-container{
+    width: 100%;
+    background: linear-gradient(rgba(4,9,30,1),rgba(4,9,30,1));
+    padding-top: 4em;
+    padding-bottom: 7em;
+}
+
+.com-container-box{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.com-container-box .btnsearch{
+    width: 100%;
+    height: 3em;
+
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+.btnsearch input{
+    width: 79.7%;
+    height: 100%;
+    padding-left: 1em;
+    color: black;
+}
+
+.btnsearch input:focus{
+    outline: none;
+}
+
+.btnsearch button{
+    border-radius: 0;
+    width: 20%;
+    margin-left: -4.3px;
+    height: 100%;
+}
+
+.com-container-box table{
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 1em rgb(81, 70, 205);
+    border: none;
+    margin-top: 1em;
+    border-collapse: collapse;
+}
+
+.com-container-box td{
+    padding-top: 1em;
+}
+
+.com-container-box th{
+    font-size: 3vmin;
+    background-color:  rgb(81, 70, 205);
+}
+
+.com-container-box hr{
+    width: 60%;
+    background-color: rgb(81, 70, 205);
+    border: none;
+    height: 0.3em;
+}
+
+.com-container-box th:nth-child(2),
+.com-container-box th:nth-child(3),
+.com-container-box td:nth-child(2),
+.com-container-box td:nth-child(3){
+    text-align: center;
+    padding: 1em 1em;
+}
+
+.com-container-box td:first-child{
+    padding-left: 1.5em;
+}
+
+.com-container-box td:last-child{
+    padding-right: 1.5em;
+}
+
+.com-container-box th:first-child{
+    padding-left: 1em;
+}
+
+.com-container-box th:last-child{
+    padding-right: 1.5em;
+}
+
+@media only screen and (max-width: 700px){
+    .com-container-box{
+        width: 90%;
+    }
+
+    .com-container-box table{
+        width: 100%;
+    }
+}

@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.front-container{
+    display: flex;
+    align-items: center;
+}
+
+#displayall{
+    position: fixed;
+    transform: translateX(-1800px);
+    transition: 1.5s ease;
+    z-index: 4;
+    width: 100%;
+}
+
+.sign-up{
+    background: linear-gradient(rgba(4,9,30,0.93),rgba(4,9,30,0.93));
+    position: absolute;
+    visibility: visible;
+    transition: 0.00001s;
+}
+
+.sign-left-container, .log-left-container{
+    width: 55%;
+}
+
+.sign-left-container video, .log-left-container video{
+    height: auto;
+    width: 100%;
+    border-radius: 50%;
+    margin-top: 5em;
+    transform: rotateY(55deg);
+    z-index: 4;
+}
+
+.sign-right-container, .log-right-container{
+    width: 30%;
+}
+
+.sign-right-container input, .log-right-container input{
+    color: whitesmoke;
+    border:  1px solid white;
+    display: block;
+    outline: none;
+    background: transparent;
+    height: 4em;
+    padding-left: 1.5em;
+    border-radius: 5px;
+    margin-top: 3em;
+    width: 100%;
+}
+
+.sign-right-container h1, .log-right-container h1{
+    text-align: center;
+    font-size: 5vmin;
+}
+
+.sign-right-container p, .log-right-container p{
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+.sign-right-container input:focus, .log-right-container input:focus{
+   border: 4px solid rgb(81, 70, 205);
+   font-weight: bolder;
+}
+
+.sign-right-container input::placeholder, .log-right-container input::placeholder{
+    color: whitesmoke;
+}
+
+.sign-right-container button, .log-right-container button{
+    width: 80%;
+    height: 3em;
+    display: block;
+    margin: auto;
+    margin-top: 2em;
+}
+
+.click{
+    color: white;
+    cursor: pointer;
+}
+
+.click:hover{
+    color: rgb(81, 70, 205);
+}
+
+
+/*  */
+.log-in{
+    position: absolute;
+    visibility: hidden;
+    width: 100%;
+    background: linear-gradient(rgba(4,9,30,0.93),rgba(4,9,30,0.93));
+    transition: 0.0001s;
+}
+
+.closebtn{
+    position: fixed;
+    cursor: pointer;
+    right: 0;
+    padding-right: 1.5em;
+    font-size: 5vmin;
+}
+
+
+@media only screen and (max-width:1000px){
+    .front-container{
+        flex-direction: column;
+    }
+
+    .sign-right-container .btn, .log-right-container .btn{
+        margin-top: .8em;
+    }
+
+    .sign-right-container input, .log-right-container input{
+        margin-top: .8em;
+    }
+
+    .sign-right-container p, .log-right-container p{
+        margin-top: .8em;
+    }
+}
+
+@media only screen and (max-width:700px){
+    .front-container{
+        flex-direction: column;
+    }
+
+    .sign-left-container, .sign-right-container, .log-left-container, .log-right-container{
+        width: 80%;
+    }
+
+    .sign-right-container .btn, .log-right-container .btn{
+        margin-top: .8em;
+    }
+
+    .sign-right-container input, .log-right-container input{
+        margin-top: .8em;
+    }
+}
